@@ -28,7 +28,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    z-index: 1;
+    
     & .first_titre {
         font-family: 'didotdisplaydemibold';
         font-size: 5em;
@@ -60,6 +61,7 @@ ul {
         font-size: 0.9em;
         font-family: 'robotothin';
         letter-spacing: 0.06em;
+        z-index: 2;
     }
 
     & li.ligne {
