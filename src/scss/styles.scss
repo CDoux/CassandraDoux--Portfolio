@@ -2,12 +2,54 @@
 @import 'fonts.scss';
 
 body {
-    background: linear-gradient(180deg, #C31432 -18.47%, #720F34 43.63%, #240B36 118.6%);
+    background: linear-gradient(-45deg, #C31432 0%, #720F34 32.6%, #240B36 62.98%, #12061B 100%);
+    background-size: 400% 400%;
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    -webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
 }
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
 
 .triangles_haut {
     position: absolute;
@@ -62,6 +104,18 @@ ul {
         font-family: 'robotothin';
         letter-spacing: 0.06em;
         z-index: 2;
+    }
+
+    & li.menu {
+        transition: 0.3s ease;
+        padding: 20px 0;
+        margin: 0 20px;
+    }
+
+    & li.menu:hover {
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        padding: 6px 0; 
     }
 
     & li.ligne {
