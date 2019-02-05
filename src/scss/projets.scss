@@ -1,0 +1,17 @@
+@import 'resetcss';
+@import 'fonts.scss';
+
+body {
+    background: linear-gradient(180deg, #C31432 -44.8%, #720F34 19.24%, #460D35 78.94%, #12061B 151.67%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.triangles_bas {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: auto;
+}

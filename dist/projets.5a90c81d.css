@@ -1,0 +1,101 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'didotdisplaybold';
+  src: url("didot_display_bold-webfont.d583d755.woff2") format("woff2"), url("didot_display_bold-webfont.679677ab.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'didotdisplaydemibold';
+  src: url("didot_display_demi_bold-webfont.ff950328.woff2") format("woff2"), url("didot_display_demi_bold-webfont.59cb2f82.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'didotdisplayregular';
+  src: url("didot_display-webfont.217d2a70.woff2") format("woff2"), url("didot_display-webfont.244c5b42.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotolight';
+  src: url("roboto-light-webfont.eb1969d6.woff2") format("woff2"), url("roboto-light-webfont.43ea2199.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotomedium';
+  src: url("roboto-medium-webfont.1a895ca2.woff2") format("woff2"), url("roboto-medium-webfont.da34107c.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotothin';
+  src: url("roboto-thin-webfont.36803ab6.woff2") format("woff2"), url("roboto-thin-webfont.4e15a907.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url("roboto-webfont.dc6fccc0.woff2") format("woff2"), url("roboto-webfont.a0287d35.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background: linear-gradient(180deg, #C31432 -44.8%, #720F34 19.24%, #460D35 78.94%, #12061B 151.67%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center; }
+
+.triangles_bas {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: auto; }
