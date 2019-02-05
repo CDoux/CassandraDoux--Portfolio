@@ -88,7 +88,7 @@ table {
   font-style: normal; }
 
 body {
-  background: linear-gradient(-45deg, #C31432 0%, #720F34 32.6%, #240B36 62.98%, #12061B 100%);
+  background: linear-gradient(177deg, #C31432 0%, #720F34 32.6%, #240B36 62.98%);
   background-size: 400% 400%;
   height: 100vh;
   width: 100vw;
@@ -100,27 +100,27 @@ body {
 
 @-webkit-keyframes Gradient {
   0% {
-    background-position: 0% 50%; }
+    background-position: 0% 17%; }
   50% {
-    background-position: 100% 50%; }
+    background-position: 100% 84%; }
   100% {
-    background-position: 0% 50%; } }
+    background-position: 0% 17%; } }
 
 @-moz-keyframes Gradient {
   0% {
-    background-position: 0% 50%; }
+    background-position: 0% 17%; }
   50% {
-    background-position: 100% 50%; }
+    background-position: 100% 84%; }
   100% {
-    background-position: 0% 50%; } }
+    background-position: 0% 17%; } }
 
 @keyframes Gradient {
   0% {
-    background-position: 0% 50%; }
+    background-position: 0% 17%; }
   50% {
-    background-position: 100% 50%; }
+    background-position: 100% 84%; }
   100% {
-    background-position: 0% 50%; } }
+    background-position: 0% 17%; } }
 
 .triangles_haut {
   position: absolute;
