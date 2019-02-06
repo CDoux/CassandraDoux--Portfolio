@@ -110,7 +110,7 @@ body {
     font-size: 5rem;
     margin-top: 4rem;
     margin-left: 11rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.3rem;
     color: rgba(255, 255, 255, 0.4);
     text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); }
 
@@ -178,7 +178,7 @@ ul {
   transition: 1s; }
 
 .is-hovered {
-  transform: translateX(6px) translateY(6px) scale(1.05);
+  transform: translateX(15px) translateY(-20px) scale(1.05);
   fill: #7A6A76;
   transition: fill 0.8s, transform 0.5s, scale 0.2s; }
 
@@ -188,8 +188,8 @@ ul {
   .unB p {
     font-family: 'robotolight';
     color: #FFFFFF;
-    font-size: 0.7rem;
-    margin-top: 2.3rem; }
+    font-size: 0.8rem;
+    margin-top: 4rem; }
 
 .deuxB {
   display: flex;
@@ -197,8 +197,8 @@ ul {
   .deuxB p {
     font-family: 'robotolight';
     color: #FFFFFF;
-    font-size: 0.7rem;
-    margin-top: 2.3rem; }
+    font-size: 0.8rem;
+    margin-top: 4rem; }
 
 .troisB {
   display: flex;
@@ -206,8 +206,8 @@ ul {
   .troisB p {
     font-family: 'robotolight';
     color: #FFFFFF;
-    font-size: 0.7rem;
-    margin-top: 2.3rem; }
+    font-size: 0.8rem;
+    margin-top: 4rem; }
 
 .quatreB {
   display: flex;
@@ -215,8 +215,8 @@ ul {
   .quatreB p {
     font-family: 'robotolight';
     color: #FFFFFF;
-    font-size: 0.7rem;
-    margin-top: 2.3rem; }
+    font-size: 0.8rem;
+    margin-top: 4rem; }
 
 .cinqB {
   display: flex;
@@ -224,18 +224,9 @@ ul {
   .cinqB p {
     font-family: 'robotolight';
     color: #FFFFFF;
-    font-size: 0.7rem;
-    margin-top: 2.3rem; }
+    font-size: 0.8rem;
+    margin-top: 4rem;
+    opacity: 0; }
 
-/* 
- .titres--projets {
-     display: flex;
-     justify-content: space-evenly;
-     align-items: center;
-     position: absolute;
-
-     & p {
-         font-family: 'robotothin';
-         color:#FFFFFF;
-     }
-} */
+.is-hover {
+  opacity: 100%; }

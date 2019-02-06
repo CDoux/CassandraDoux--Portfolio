@@ -44,10 +44,13 @@ quatre.addEventListener('mouseout', function() {
 
 var cinq = document.querySelector('.cinqB');
 var ombre_cinq = document.querySelector('.cinq--plein');
+var titre_cinq = document.querySelector('.titre--cinq');
 
 cinq.addEventListener('mouseover', function() {
-    ombre_cinq.classList.add('is-hovered')
+    ombre_cinq.classList.add('is-hovered');
+    titre_cinq.classList.add('is-hover');
 });
 cinq.addEventListener('mouseout', function() {
     ombre_cinq.classList.remove('is-hovered')
+    titre_cinq.classList.remove('is-hover')
 });
