@@ -105,15 +105,45 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   // Override the current require with this new one
   return newRequire;
 })({"main.js":[function(require,module,exports) {
-var un = document.querySelector('.un');
+var un = document.querySelector('.unB');
 var ombre = document.querySelector('.un--plein');
-console.log(ombre);
 un.addEventListener('mouseover', function () {
   ombre.classList.add('is-hovered');
-  console.log('work?');
 });
 un.addEventListener('mouseout', function () {
   ombre.classList.remove('is-hovered');
+});
+var deux = document.querySelector('.deuxB');
+var ombre_deux = document.querySelector('.deux--plein');
+deux.addEventListener('mouseover', function () {
+  ombre_deux.classList.add('is-hovered');
+});
+deux.addEventListener('mouseout', function () {
+  ombre_deux.classList.remove('is-hovered');
+});
+var trois = document.querySelector('.troisB');
+var ombre_trois = document.querySelector('.trois--plein');
+trois.addEventListener('mouseover', function () {
+  ombre_trois.classList.add('is-hovered');
+});
+trois.addEventListener('mouseout', function () {
+  ombre_trois.classList.remove('is-hovered');
+});
+var quatre = document.querySelector('.quatreB');
+var ombre_quatre = document.querySelector('.quatre--plein');
+quatre.addEventListener('mouseover', function () {
+  ombre_quatre.classList.add('is-hovered');
+});
+quatre.addEventListener('mouseout', function () {
+  ombre_quatre.classList.remove('is-hovered');
+});
+var cinq = document.querySelector('.cinqB');
+var ombre_cinq = document.querySelector('.cinq--plein');
+cinq.addEventListener('mouseover', function () {
+  ombre_cinq.classList.add('is-hovered');
+});
+cinq.addEventListener('mouseout', function () {
+  ombre_cinq.classList.remove('is-hovered');
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -142,7 +172,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59104" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60009" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

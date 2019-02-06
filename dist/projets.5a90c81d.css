@@ -109,14 +109,14 @@ body {
     font-family: 'didotdisplaydemibold';
     font-size: 5rem;
     margin-top: 4rem;
-    margin-left: 3.5rem;
+    margin-left: 11rem;
     letter-spacing: 0.1rem;
     color: rgba(255, 255, 255, 0.4);
     text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); }
 
 ul {
   margin-top: 1.7rem;
-  margin-left: 2rem; }
+  margin-left: 10rem; }
   ul li {
     display: inline;
     padding: 0.5rem; }
@@ -158,9 +158,29 @@ ul {
   height: 100%; }
 
 .un--plein {
-  fill: transparent; }
+  fill: transparent;
+  transition: 1s; }
+
+.deux--plein {
+  fill: transparent;
+  transition: 1s; }
+
+.trois--plein {
+  fill: transparent;
+  transition: 1s; }
+
+.quatre--plein {
+  fill: transparent;
+  transition: 1s; }
+
+.cinq--plein {
+  fill: transparent;
+  transition: 1s; }
 
 .is-hovered {
   transform: translateX(6px) translateY(6px) scale(1.05);
   fill: grey;
-  transition: fill 0.8s, transform 0.2s, scale 0.2s; }
+  transition: fill 0.8s, transform 0.5s, scale 0.2s; }
+
+.ligneB {
+  fill: transparent; }
