@@ -226,7 +226,8 @@ ul {
     color: #FFFFFF;
     font-size: 0.8rem;
     margin-top: 4rem;
-    opacity: 0; }
+    opacity: 0;
+    fill: transparent; }
 
 .is-hover {
   opacity: 100%; }
