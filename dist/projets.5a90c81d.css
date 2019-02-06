@@ -99,14 +99,16 @@ body {
   width: 100vw;
   height: auto; }
 
-.text .first_titre {
-  font-family: 'didotdisplaydemibold';
-  font-size: 5rem;
-  margin-top: 4rem;
-  margin-left: 3.5rem;
-  letter-spacing: 0.1rem;
-  color: rgba(255, 255, 255, 0.4);
-  text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); }
+.titre--premiermenu {
+  z-index: 3; }
+  .titre--premiermenu .first_titre {
+    font-family: 'didotdisplaydemibold';
+    font-size: 5rem;
+    margin-top: 4rem;
+    margin-left: 3.5rem;
+    letter-spacing: 0.1rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); }
 
 ul {
   margin-top: 1.7rem;
@@ -130,3 +132,14 @@ ul {
     padding: 0.4rem 0; }
   ul li.ligne {
     color: #FFFFFF; }
+
+.projets--menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: absolute;
+  height: 100%;
+  z-index: 2; }
