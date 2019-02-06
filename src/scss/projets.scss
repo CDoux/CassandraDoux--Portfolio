@@ -1,6 +1,10 @@
 @import 'resetcss';
 @import 'fonts.scss';
 
+* {
+    overflow: visible;
+}
+
 body {
     background: linear-gradient(180deg, #C31432 -44.8%, #720F34 19.24%, #460D35 78.94%, #12061B 151.67%);
     height: 100vh;
@@ -15,8 +19,9 @@ body {
     height: auto;
 }
 
-.titre--premiermenu {
+.texte {
     z-index: 3;
+    height: 300px;
 
     & .first_titre {
         font-family: 'didotdisplaydemibold';
@@ -63,7 +68,10 @@ ul {
     }
 }
 
-.projets--menu {
+
+
+
+.liste--projet {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -72,5 +80,25 @@ ul {
     margin-right: 10%;
     position: absolute;
     height: 100%;
-    z-index: 2;
+}
+
+.liste--projetB {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+    height: 100%;
+}
+
+.un--plein {
+    fill: transparent;
+}
+
+.is-hovered {
+    transform: translateX(6px) translateY(6px) scale(1.05);
+    fill: grey;
+    transition: fill 0.8s, transform 0.2s, scale 0.2s;
 }

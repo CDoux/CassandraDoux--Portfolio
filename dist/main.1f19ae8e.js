@@ -104,79 +104,18 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"scss/styles.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./fonts/didot_display_bold-webfont.woff2":[["didot_display_bold-webfont.d583d755.woff2","scss/fonts/didot_display_bold-webfont.woff2"],"scss/fonts/didot_display_bold-webfont.woff2"],"./fonts/didot_display_bold-webfont.woff":[["didot_display_bold-webfont.679677ab.woff","scss/fonts/didot_display_bold-webfont.woff"],"scss/fonts/didot_display_bold-webfont.woff"],"./fonts/didot_display_demi_bold-webfont.woff2":[["didot_display_demi_bold-webfont.ff950328.woff2","scss/fonts/didot_display_demi_bold-webfont.woff2"],"scss/fonts/didot_display_demi_bold-webfont.woff2"],"./fonts/didot_display_demi_bold-webfont.woff":[["didot_display_demi_bold-webfont.59cb2f82.woff","scss/fonts/didot_display_demi_bold-webfont.woff"],"scss/fonts/didot_display_demi_bold-webfont.woff"],"./fonts/didot_display-webfont.woff2":[["didot_display-webfont.217d2a70.woff2","scss/fonts/didot_display-webfont.woff2"],"scss/fonts/didot_display-webfont.woff2"],"./fonts/didot_display-webfont.woff":[["didot_display-webfont.244c5b42.woff","scss/fonts/didot_display-webfont.woff"],"scss/fonts/didot_display-webfont.woff"],"./fonts/roboto-light-webfont.woff2":[["roboto-light-webfont.eb1969d6.woff2","scss/fonts/roboto-light-webfont.woff2"],"scss/fonts/roboto-light-webfont.woff2"],"./fonts/roboto-light-webfont.woff":[["roboto-light-webfont.43ea2199.woff","scss/fonts/roboto-light-webfont.woff"],"scss/fonts/roboto-light-webfont.woff"],"./fonts/roboto-medium-webfont.woff2":[["roboto-medium-webfont.1a895ca2.woff2","scss/fonts/roboto-medium-webfont.woff2"],"scss/fonts/roboto-medium-webfont.woff2"],"./fonts/roboto-medium-webfont.woff":[["roboto-medium-webfont.da34107c.woff","scss/fonts/roboto-medium-webfont.woff"],"scss/fonts/roboto-medium-webfont.woff"],"./fonts/roboto-thin-webfont.woff2":[["roboto-thin-webfont.36803ab6.woff2","scss/fonts/roboto-thin-webfont.woff2"],"scss/fonts/roboto-thin-webfont.woff2"],"./fonts/roboto-thin-webfont.woff":[["roboto-thin-webfont.4e15a907.woff","scss/fonts/roboto-thin-webfont.woff"],"scss/fonts/roboto-thin-webfont.woff"],"./fonts/roboto-webfont.woff2":[["roboto-webfont.dc6fccc0.woff2","scss/fonts/roboto-webfont.woff2"],"scss/fonts/roboto-webfont.woff2"],"./fonts/roboto-webfont.woff":[["roboto-webfont.a0287d35.woff","scss/fonts/roboto-webfont.woff"],"scss/fonts/roboto-webfont.woff"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+})({"main.js":[function(require,module,exports) {
+var un = document.querySelector('.un');
+var ombre = document.querySelector('.un--plein');
+console.log(ombre);
+un.addEventListener('mouseover', function () {
+  ombre.classList.add('is-hovered');
+  console.log('work?');
+});
+un.addEventListener('mouseout', function () {
+  ombre.classList.remove('is-hovered');
+});
+},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -345,4 +284,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","main.js"], null)
+//# sourceMappingURL=/main.1f19ae8e.map

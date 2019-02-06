@@ -87,6 +87,9 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+* {
+  overflow: visible; }
+
 body {
   background: linear-gradient(180deg, #C31432 -44.8%, #720F34 19.24%, #460D35 78.94%, #12061B 151.67%);
   height: 100vh;
@@ -99,9 +102,10 @@ body {
   width: 100vw;
   height: auto; }
 
-.titre--premiermenu {
-  z-index: 3; }
-  .titre--premiermenu .first_titre {
+.texte {
+  z-index: 3;
+  height: 300px; }
+  .texte .first_titre {
     font-family: 'didotdisplaydemibold';
     font-size: 5rem;
     margin-top: 4rem;
@@ -133,7 +137,7 @@ ul {
   ul li.ligne {
     color: #FFFFFF; }
 
-.projets--menu {
+.liste--projet {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -141,5 +145,22 @@ ul {
   margin-left: 10%;
   margin-right: 10%;
   position: absolute;
-  height: 100%;
-  z-index: 2; }
+  height: 100%; }
+
+.liste--projetB {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: absolute;
+  height: 100%; }
+
+.un--plein {
+  fill: transparent; }
+
+.is-hovered {
+  transform: translateX(6px) translateY(6px) scale(1.05);
+  fill: grey;
+  transition: fill 0.8s, transform 0.2s, scale 0.2s; }
