@@ -52,7 +52,6 @@ ul {
     }
 
     & li.menu {
-        transition: 0.3s ease;
         padding: 20px 0;
         margin: 0 20px;
     }
@@ -60,7 +59,8 @@ ul {
     & li.menu:hover {
         border-top: 0.01rem solid #ffffff;
         border-bottom: 0.01rem solid #ffffff;
-        padding: 0.4rem 0; 
+        padding: 0.4rem 0;
+        transition: 0.3s ease; 
     }
 
     & li.ligne {
@@ -114,13 +114,86 @@ ul {
     transition: 1s;
 }
 
-
 .is-hovered {
     transform: translateX(6px) translateY(6px) scale(1.05);
-    fill: grey;
+    fill: #7A6A76;
     transition: fill 0.8s, transform 0.5s, scale 0.2s;
 }
 
- .ligneB {
-    fill: transparent;
- }
+
+
+.unB {
+    display: flex;
+    flex-direction: column;
+    
+    & p {
+        font-family: 'robotolight';
+        color: #FFFFFF;
+        font-size: 0.7rem;
+        margin-top: 2.3rem;
+    }
+}
+.deuxB {
+    display: flex;
+    flex-direction: column;
+    
+    & p {
+        font-family: 'robotolight';
+        color: #FFFFFF;
+        font-size: 0.7rem;
+        margin-top: 2.3rem;
+    }
+}
+.troisB {
+    display: flex;
+    flex-direction: column;
+    
+    & p {
+        font-family: 'robotolight';
+        color: #FFFFFF;
+        font-size: 0.7rem;
+        margin-top: 2.3rem;
+    }
+}
+.quatreB {
+    display: flex;
+    flex-direction: column;
+    
+    & p {
+        font-family: 'robotolight';
+        color: #FFFFFF;
+        font-size: 0.7rem;
+        margin-top: 2.3rem;
+    }
+}
+.cinqB {
+    display: flex;
+    flex-direction: column;
+    
+    & p {
+        font-family: 'robotolight';
+        color: #FFFFFF;
+        font-size: 0.7rem;
+        margin-top: 2.3rem;
+    }
+}
+
+
+
+
+
+
+
+
+/* 
+ .titres--projets {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     position: absolute;
+
+     & p {
+         font-family: 'robotothin';
+         color:#FFFFFF;
+     }
+} */
